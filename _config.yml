@@ -1,0 +1,20 @@
+# Site Settings
+title: Trabajo final BAT2 IES Sorolla
+email: carlos.sanchez@iessorolla.es
+description: >
+  Trabajo final BAT2 IES Sorolla
+baseurl: ""
+url: "https://bat2.github.io"
+github_username:  profesorasix
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
