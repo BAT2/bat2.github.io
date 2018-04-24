@@ -1,2 +1,3 @@
 # bat2.github.io
-*Jose Manuel Alegre Bilbao
+* Aitana Cárceles
+* Jose Manuel Alegre Bilbao
