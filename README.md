@@ -2,4 +2,8 @@
 * Aitana Cárceles
 * Jose Manuel Alegre Bilbao
 * Alba
-*Alex Lillo Moreno
+* Arturo Madrid Martin
+* Alex Lillo Moreno
+* Michely Patricia Moreno Cardoso
+* Jose Manuel Marco 
+* Adrian Garzón
