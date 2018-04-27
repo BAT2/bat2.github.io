@@ -1,10 +1,65 @@
+body {
+  counter-reset: section 1 subsection-counter doc-counter assignment-counter;
+}
 
-.goal-box {
-  background-color: yellow;
+/* SECTIONS */
+
+section>p {
+  text-indent: 10px;
+}
+
+section>header>h2 {
+  counter-increment: subsection-counter;
+}
+
+section>header>h2::before {
+  content: counter(section) "." counter(subsection-counter) ". "
+}
+
+/* ASIDES DOC */
+
+aside.doc>div {
+  border-left: 2px solid orange;
+  padding: 0px;
+  padding-left: 20px;
+}
+
+aside.doc>header>p {
+  border-bottom: 3px solid yellow;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+aside.doc>header>p:before {
+  counter-increment: doc-counter;
+  content: "DOC." counter(doc-counter);
+  font-size: 0.5em;
+  background-color: orange;
+  padding: 2px;
+  margin-right: 3px;
+  vertical-align: 25%;
+}
+
+aside.doc hr {
+  border-color: red;
+  width: 30%;
+  text-align: left;
+  margin-left: 0;
+}
+
+aside.doc div ol li {
+  counter-increment: assignment-counter;
+  list-style-type: none;
+}
+
+aside.doc div ol li:before {
+  content: counter(assignment-counter) ". ";
+  font-weight: bold;
 }
 
 .goal-box {
-  background-color: w3-theme-l3;
+  background-color: yellow;
 }
 
 .synthesis-box {
