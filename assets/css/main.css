@@ -1,5 +1,5 @@
 body {
-  counter-reset: section 1 subsection-counter doc-counter assignment-counter;
+  counter-reset: section 1 subsection-counter doc-counter doc-assignment-counter assignment-counter;
 }
 
 p {
@@ -85,13 +85,55 @@ aside.doc hr {
 }
 
 aside.doc div ol li {
-  counter-increment: assignment-counter;
+  counter-increment: doc-assignment-counter;
   list-style-type: none;
 }
 
 aside.doc div ol li:before {
+  content: counter(doc-assignment-counter) ". ";
+  font-weight: bold;
+}
+
+/*ASIDE DOC-PURPLE*/
+
+aside.doc-purple div{
+  border-left-color: purple
+}
+aside.doc-purple div ul{
+  list-style: none;
+}
+
+aside.doc-purple div ul li:before {
+  content: '\23F5';
+  font-size: 1.2em;
+  color:purple;
+
+}
+
+/*ASIDE ASSIGNMENT*/
+
+aside.assignment>header {
+  background-color: green;
+  color: white;
+  font-size: 1.2em;
+  width: 30%;
+  box-shadow: 10px 10px 30px #888888
+}
+
+aside.assignment ol li {
+  counter-increment: assignment-counter;
+  list-style-type: none;
+}
+
+aside.assignment ol li:before {
   content: counter(assignment-counter) ". ";
   font-weight: bold;
+}
+
+aside.assignment {
+  border: 2px green solid;
+  width:100%;
+  background-color:white;
 }
 
 /* TABLES */
@@ -148,4 +190,11 @@ figure>figcaption {
 
 .synthesis-box {
   border: 1px solid green;
+}
+
+/*DIV ASIDE*/
+
+div.aside {
+  background-color:lightgreen;
+  padding:20px;
 }
