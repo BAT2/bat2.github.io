@@ -43,7 +43,7 @@ section>header>h2::before {
 }
 
 section ul {
-  list-style-type:square;
+  list-style-type: square;
 }
 
 /* ASIDES DOC */
@@ -184,8 +184,22 @@ figure>figcaption {
   font-style: italic;
 }
 
-.goal-box {
-  background-color: yellow;
+div.goal-box p:first-of-type {
+  background-color:rgba(41, 162, 137, 0.92) ;
+  box-shadow: 4px 4px 3px #888888;
+  padding:10px 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-style: italic;
+
+}
+
+div.goal-box p:first-of-type::before {
+  content: "objetivo";
+  font-variant: small-caps;
+  padding: 20px;
+  /*margin-left: -100px;*/
+  background-color: lightblue;
 }
 
 .synthesis-box {
