@@ -112,17 +112,19 @@ aside.doc-purple div ul li:before {
 
 /*ASIDE ASSIGNMENT*/
 
-aside.assignment>header {
-  background-color: green;
+aside.assignment header>p {
+  background-color: rgb(11, 126, 95);
   color: white;
   font-size: 1.2em;
-  width: 30%;
-  box-shadow: 10px 10px 30px #888888
+  width: 60%;
+  box-shadow: 4px 4px 10px #888888
 }
 
 aside.assignment ol li {
   counter-increment: assignment-counter;
   list-style-type: none;
+  text-align: justify;
+  margin: 30px 0;
 }
 
 aside.assignment ol li:before {
@@ -206,9 +208,9 @@ div.goal-box p:first-of-type::before {
   border: 1px solid green;
 }
 
-/*DIV ASIDE*/
+/*ANALISIS-BOX*/
 
-div.aside {
+.analisis-box {
   background-color:lightgreen;
   padding:20px;
 }
