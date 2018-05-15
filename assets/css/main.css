@@ -89,20 +89,20 @@ aside {
   margin-bottom: 16px;
 }
 
-aside.doc>div {
+aside.doc .doc-left-border {
   border-left: 2px solid orange;
   padding: 0px;
   padding-left: 20px;
 }
 
-aside.doc>header>p {
+aside.doc header>p {
   border-bottom: 3px solid yellow;
   font-variant: small-caps;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-aside.doc>header>p:before {
+aside.doc header>p:before {
   counter-increment: doc-counter;
   content: "DOC." counter(doc-counter);
   font-size: 0.5em;
