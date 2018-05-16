@@ -49,8 +49,7 @@ dd {
 aside div dt:before {
   content: '\23F5';
   font-size: 1.2em;
-  color:#009688;
-
+  color: #009688;
 }
 
 /* SECTIONS */
@@ -89,7 +88,7 @@ aside {
   margin-bottom: 16px;
 }
 
-aside.doc .doc-left-border {
+aside.doc>div, .doc-left-border {
   border-left: 2px solid orange;
   padding: 0px;
   padding-left: 20px;
@@ -131,19 +130,23 @@ aside.doc div ol li:before {
 
 /*ASIDE DOC-PURPLE*/
 
-aside.doc-purple div{
+aside.doc-purple>div {
   border-left-color: purple
 }
-aside.doc-purple div ul{
+
+aside.doc-purple div ul {
   list-style: none;
 }
 
 aside.doc-purple div ul li:before {
   content: '\23F5';
   font-size: 1.2em;
-  color:purple;
+  color: purple;
 }
 
+aside .doc-purple-background {
+  background-color: rgb(184, 145, 227);
+}
 
 /*ASIDE ASSIGNMENT*/
 
@@ -169,8 +172,8 @@ aside.assignment ol li:before {
 
 aside.assignment {
   border: 2px green solid;
-  width:100%;
-  background-color:white;
+  width: 100%;
+  background-color: white;
 }
 
 /* TABLES */
@@ -217,7 +220,6 @@ table.orange th {
   background-color: darkorange;
 }
 
-
 /* FIGURE */
 
 figure>figcaption::before {
@@ -240,13 +242,12 @@ figure>figcaption {
 }
 
 div.goal-box p:first-of-type {
-  background-color:rgba(41, 162, 137, 0.92) ;
+  background-color: rgba(41, 162, 137, 0.92);
   box-shadow: 4px 4px 3px #888888;
-  padding:10px 8px;
+  padding: 10px 8px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   font-style: italic;
-
 }
 
 div.goal-box p:first-of-type::before {
@@ -264,6 +265,6 @@ div.goal-box p:first-of-type::before {
 /*ANALISIS-BOX*/
 
 .analisis-box {
-  background-color:lightgreen;
-  padding:20px;
+  background-color: lightgreen;
+  padding: 20px;
 }
