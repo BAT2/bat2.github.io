@@ -29,19 +29,21 @@ dl {
 
 dt {
   float: left;
-  width: 10%;
+  width: 20%;
   /* adjust the width; make sure the total of both is 100% */
   padding: 0;
   margin: 0;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 dd {
   float: right;
-  width: 90%;
+  width: 80%;
   /* adjust the width; make sure the total of both is 100% */
   background: #dd0 padding: 0;
   margin: 0;
+  font-size: 0.8em;
 }
 
 /*ASIDE DOC-BLUE*/
